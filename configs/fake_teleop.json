@@ -1,0 +1,22 @@
+{
+  "robot": {
+    "fake": true,
+    "role": "follower",
+    "max_speed_deg_s": 720
+  },
+  "leader": {
+    "fake": true,
+    "role": "leader"
+  },
+  "run": {
+    "hz": 200.0,
+    "duration": 2.0,
+    "on_error": "hold"
+  },
+  "record": {
+    "root": "data/fake",
+    "task": "fake_teleop",
+    "cameras": ["wrist"],
+    "fps": 30.0
+  }
+}

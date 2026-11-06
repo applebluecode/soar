@@ -1,0 +1,25 @@
+{
+  "robot": {
+    "port": "/dev/ttyACM0",
+    "role": "follower",
+    "backend": "auto",
+    "max_speed_deg_s": 720
+  },
+  "leader": {
+    "port": "/dev/ttyACM1",
+    "role": "leader",
+    "backend": "auto"
+  },
+  "run": {
+    "hz": 200.0,
+    "duration": null,
+    "on_error": "hold",
+    "max_consecutive_errors": 10
+  },
+  "record": {
+    "root": "data/pick_cube",
+    "task": "pick_cube",
+    "cameras": ["0"],
+    "fps": 30.0
+  }
+}

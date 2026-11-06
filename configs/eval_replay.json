@@ -1,0 +1,6 @@
+{
+  "robot": {"fake": true, "role": "follower"},
+  "run": {"hz": 100.0, "duration": 30.0, "on_error": "abort"},
+  "replay": {"episode": "data/fake/<episode_id>", "speed": 1.0},
+  "eval": {"episodes": 3, "max_duration_s": 30.0}
+}
